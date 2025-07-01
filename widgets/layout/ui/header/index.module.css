@@ -1,5 +1,4 @@
-.root {
-	@mixin responsive padding-inline, 15, 150;
+.wrapper {
 	@mixin responsive padding-block, 20, 20;
 
 	display: flex;
