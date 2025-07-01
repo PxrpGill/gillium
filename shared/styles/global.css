@@ -27,7 +27,25 @@
 	--white-100-color: #f4f4f5;
 }
 
+body {
+	font-family: var(--font-roboto-regular);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--font-roboto-bold);
+}
+
+strong {
+	font-family: var(--font-roboto-medium);
+}
+
 html,
 body {
 	background: var(--black-100-color);
+	font-weight: 400;
 }
