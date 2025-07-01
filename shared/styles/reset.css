@@ -126,3 +126,11 @@ a {
 	text-decoration: unset;
 	color: inherit;
 }
+
+button {
+	background: inherit;
+	border: unset;
+	color: var(--white-100-color);
+	padding: unset;
+	cursor: pointer;
+}

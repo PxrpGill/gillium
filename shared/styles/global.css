@@ -31,6 +31,7 @@ html,
 body {
 	font-size: 1vw;
 	font-family: var(--font-roboto-regular);
+	color: var(--white-100-color);
 }
 
 h1,

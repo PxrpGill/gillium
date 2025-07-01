@@ -1,0 +1,3 @@
+.logo {
+	@mixin responsive height, 30, 40;
+}

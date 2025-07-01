@@ -1,0 +1,46 @@
+.root {
+	@mixin responsive padding-block, 2, 2;
+	@mixin responsive padding-inline, 25, 25;
+	@mixin button-text;
+	@mixin responsive border-radius, 5, 7;
+
+	display: flex;
+	align-items: center;
+
+	&.filled {
+		background-color: var(--primary-60-color);
+		color: var(--white-100-color);
+		border: 1px solid var(--primary-100-color);
+	}
+
+	&.outline {
+		@mixin transitionOptions;
+
+		transition-property: color background-color border-color;
+		color: var(--primary-60-color);
+		border: var(--primary-60-color) 1px solid;
+
+		@media (hover: hover) {
+			&:hover {
+				color: var(--white-100-color);
+				background-color: var(--primary-100-color);
+				border-color: var(--primary-100-color);
+			}
+		}
+	}
+
+	&.subtle {
+		padding: unset;
+	}
+
+	&.filled,
+	&.subtle {
+		@mixin transition opacity;
+
+		@media (hover: hover) {
+			&:hover {
+				opacity: 0.8;
+			}
+		}
+	}
+}
