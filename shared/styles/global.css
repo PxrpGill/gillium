@@ -1,1 +1,33 @@
 @import url('./reset.css');
+
+:root {
+	--black-100-color: #18181b;
+	--black-80-color: #23232a;
+	--black-60-color: #2e2e38;
+	--black-40-color: #444452;
+	--black-20-color: #5c5c6e;
+
+	--primary-100-color: #1e293b;
+	--primary-80-color: #334155;
+	--primary-60-color: #475569;
+	--primary-40-color: #64748b;
+	--primary-20-color: #94a3b8;
+
+	--accent-100-color: #0ea5e9;
+	--accent-80-color: #38bdf8;
+	--accent-60-color: #7dd3fc;
+	--accent-40-color: #bae6fd;
+	--accent-20-color: #e0f2fe;
+
+	--error-100-color: #dc2626;
+	--success-100-color: #16a34a;
+	--warning-100-color: #f59e42;
+	--info-100-color: #2563eb;
+
+	--white-100-color: #f4f4f5;
+}
+
+html,
+body {
+	background: var(--black-100-color);
+}
