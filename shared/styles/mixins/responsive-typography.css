@@ -1,0 +1,55 @@
+@define-mixin responsive-typography $font-size-mobile, $font-size-desktop, $line-height-mobile, $line-height-desktop, $font-weight: 400 {
+  font-size: calc($(font-size-desktop)rem / 14.4);
+  line-height: calc($(line-height-desktop)rem / 14.4);
+  font-weight: $(font-weight);
+  
+  @media (max-width: 767px) {
+    font-size: calc($(font-size-mobile)rem / 3.75);
+    line-height: calc($(line-height-mobile)rem / 3.75);
+  }
+}
+
+@define-mixin h1 {
+  @mixin responsive-typography 32, 64, 40, 76, 700;
+  font-family: var(--font-roboto-bold);
+}
+
+@define-mixin h2 {
+  @mixin responsive-typography 28, 48, 36, 58, 700;
+  font-family: var(--font-roboto-bold);
+}
+
+@define-mixin h3 {
+  @mixin responsive-typography 24, 36, 32, 44, 700;
+  font-family: var(--font-roboto-bold);
+}
+
+@define-mixin h4 {
+  @mixin responsive-typography 20, 28, 28, 36, 700;
+  font-family: var(--font-roboto-bold);
+}
+
+@define-mixin body-large {
+  @mixin responsive-typography 18, 24, 26, 32, 400;
+  font-family: var(--font-roboto-regular);
+}
+
+@define-mixin body-medium {
+  @mixin responsive-typography 16, 20, 24, 28, 400;
+  font-family: var(--font-roboto-regular);
+}
+
+@define-mixin body-small {
+  @mixin responsive-typography 14, 16, 20, 24, 400;
+  font-family: var(--font-roboto-regular);
+}
+
+@define-mixin caption {
+  @mixin responsive-typography 12, 14, 16, 20, 400;
+  font-family: var(--font-roboto-regular);
+}
+
+@define-mixin button-text {
+  @mixin responsive-typography 16, 18, 24, 26, 500;
+  font-family: var(--font-roboto-medium);
+}

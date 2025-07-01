@@ -4,5 +4,4 @@
 	@media (max-width: 767px) {
 		$(property): calc($(mobile-size)rem / 3.75);
 	}
-
 }
