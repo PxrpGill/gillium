@@ -2,7 +2,6 @@ import cx from 'clsx';
 import parser from 'html-react-parser';
 import Link from 'next/link';
 
-import { Button } from '@/shared/ui';
 import { HEADER_MAIN_PAGE_LINK } from '@/widgets/layout/model/header.constants';
 import type { HeaderProps } from '@/widgets/layout/types/header.types';
 import { HeaderNavigation } from '@/widgets/layout/ui/header-navigation';
@@ -21,9 +20,6 @@ export const Header = ({ navigationLinks, className }: HeaderProps) => {
 				navigationLinks={navigationLinks}
 				className={css.navigation}
 			/>
-			<Button>Тест</Button>
-			<Button variant="outline">Тест</Button>
-			<Button variant="subtle">Тест</Button>
 		</header>
 	);
 };

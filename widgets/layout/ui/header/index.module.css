@@ -1,3 +1,8 @@
-.logo {
-	@mixin responsive height, 30, 40;
+.root {
+	@mixin responsive padding-inline, 15, 150;
+	@mixin responsive padding-block, 20, 20;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }

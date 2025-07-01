@@ -1,3 +1,4 @@
+import { HEADER_NAVIGATION } from './model/header.constants';
 import type { LayoutProps } from './types/layout.types';
 import { Footer } from './ui/footer';
 import { Header } from './ui/header';
@@ -5,7 +6,7 @@ import { Header } from './ui/header';
 export const Layout = ({ children }: LayoutProps) => {
 	return (
 		<>
-			<Header />
+			<Header navigationLinks={HEADER_NAVIGATION} />
 			{children}
 			<Footer />
 		</>
