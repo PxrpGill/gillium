@@ -27,7 +27,9 @@
 	--white-100-color: #f4f4f5;
 }
 
+html,
 body {
+	font-size: 1vw;
 	font-family: var(--font-roboto-regular);
 }
 
