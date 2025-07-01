@@ -1,8 +1,9 @@
+import '@/shared/styles/global.css';
+
 import type { Metadata } from 'next';
 
 import { fontVariables } from '@/shared/config';
-
-import '@/shared/styles/global.css';
+import { Layout } from '@/widgets';
 
 export const metadata: Metadata = {
 	title: '',
@@ -16,7 +17,9 @@ const RootLayout = ({
 }>) => {
 	return (
 		<html lang="en" className={fontVariables}>
-			<body>{children}</body>
+			<body>
+				<Layout>{children}</Layout>
+			</body>
 		</html>
 	);
 };
