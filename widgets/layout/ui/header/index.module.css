@@ -6,3 +6,14 @@
 	justify-content: space-between;
 	align-items: center;
 }
+
+.homePageLink {
+	@mixin transition opacity;
+	@mixin button-text;
+
+	@media (hover: hover) {
+		&:hover {
+			opacity: 0.8;
+		}
+	}
+}
