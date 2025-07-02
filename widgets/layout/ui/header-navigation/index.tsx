@@ -16,7 +16,7 @@ export const HeaderNavigation = ({
 	return (
 		<nav className={cx(css.root, className)}>
 			{navigationLinks.map((linkItem, index) => (
-				<Button key={index} as={Link} href={linkItem.href} variant={linkItem}>
+				<Button key={index} as={Link} href={linkItem.href} variant={linkItem.variant}>
 					{parser(linkItem.text)}
 				</Button>
 			))}
