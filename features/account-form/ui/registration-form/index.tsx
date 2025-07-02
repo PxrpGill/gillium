@@ -5,5 +5,5 @@ import type { RegistrationFormProps } from '@/features/account-form/types/regist
 import css from './index.module.css';
 
 export const RegistrationForm = ({ className }: RegistrationFormProps) => {
-	return <form className={cx(css.root, className)}></form>;
+	return <form className={cx(css.root, className)}>регистрация</form>;
 };

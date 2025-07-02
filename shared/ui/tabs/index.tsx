@@ -2,17 +2,17 @@
 
 import cx from 'clsx';
 import parser from 'html-react-parser';
-import { useState, type ReactNode } from 'react';
+import type { JSX } from 'react';
+import { useState } from 'react';
 
 import type { PropsWithClassName } from '@/shared/types';
-import type { ButtonVariant } from '@/shared/ui/button';
 import { Button } from '@/shared/ui/button';
 
 import css from './index.module.css';
 
-type TabProps = {
+export type TabProps = {
 	text: string;
-	content: ReactNode;
+	content: JSX.Element;
 };
 
 type TabsProps = PropsWithClassName & {
@@ -28,27 +28,21 @@ export const Tabs = ({ tabs, className }: TabsProps) => {
 		setActiveTab(index);
 	};
 
-	const defineActiveTabVariant = (index: number): ButtonVariant => {
-		if (activeTab === index) {
-			return 'filled';
-		}
-
-		return 'outline';
-	};
-
-	<article className={cx(css.root, className)}>
-		<ul className={css.tabs}>
-			{tabs.map((tab, index) => (
-				<li className={css.tab} key={index}>
-					<Button
-						onClick={handleTabClick(index)}
-						variant={defineActiveTabVariant(index)}
-					>
-						{parser(tab.text)}
-					</Button>
-				</li>
-			))}
-		</ul>
-		<div className={css.tabContent}>{tabs[activeTab].content}</div>
-	</article>;
+	return (
+		<article className={cx(css.root, className)}>
+			<ul className={css.tabs}>
+				{tabs.map((tab, index) => (
+					<li className={css.tab} key={index}>
+						<Button
+							onClick={() => handleTabClick(index)}
+							variant={activeTab === index ? 'filled' : 'outline'}
+						>
+							{parser(tab.text)}
+						</Button>
+					</li>
+				))}
+			</ul>
+			<div className={css.tabContent}>{tabs[activeTab].content}</div>
+		</article>
+	);
 };

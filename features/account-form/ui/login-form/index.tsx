@@ -5,5 +5,5 @@ import type { LoginFormProps } from '@/features/account-form/types/login-form.ty
 import css from './index.module.css';
 
 export const LoginForm = ({ className }: LoginFormProps) => {
-	return <form className={cx(css.root, className)}></form>;
+	return <form className={cx(css.root, className)}>авторизация</form>;
 };
