@@ -6,3 +6,5 @@ export { Modal } from './modal';
 export { Container } from './container';
 
 export { Tabs } from './tabs';
+
+export { Input } from './input';

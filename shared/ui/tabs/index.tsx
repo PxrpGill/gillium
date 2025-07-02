@@ -30,7 +30,7 @@ export const Tabs = ({ tabs, className }: TabsProps) => {
 
 	return (
 		<article className={cx(css.root, className)}>
-			<ul className={css.tabs}>
+			<ul className={css.tabs} data-element="tab-panel">
 				{tabs.map((tab, index) => (
 					<li className={css.tab} key={index}>
 						<Button
@@ -42,7 +42,9 @@ export const Tabs = ({ tabs, className }: TabsProps) => {
 					</li>
 				))}
 			</ul>
-			<div className={css.tabContent}>{tabs[activeTab].content}</div>
+			<div className={css.tabContent} data-tab-content="content">
+				{tabs[activeTab].content}
+			</div>
 		</article>
 	);
 };
