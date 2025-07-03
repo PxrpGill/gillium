@@ -1,8 +1,12 @@
 import cx from 'clsx';
+import parser from 'html-react-parser';
 
-import { getRegistrationInputs } from '@/features/account-form/model/registration-form.constants';
+import {
+	getRegistrationInputs,
+	REGISTRATION_SUBMIT_BUTTON,
+} from '@/features/account-form/model/registration-form.constants';
 import type { RegistrationFormProps } from '@/features/account-form/types/registration-form.types';
-import { Input } from '@/shared/ui';
+import { Button, Input } from '@/shared/ui';
 
 import css from './index.module.css';
 
@@ -16,6 +20,7 @@ export const RegistrationForm = ({ className }: RegistrationFormProps) => {
 					<Input {...inputProps} key={index} />
 				))}
 			</div>
+			<Button type="submit">{parser(REGISTRATION_SUBMIT_BUTTON)}</Button>
 		</form>
 	);
 };
