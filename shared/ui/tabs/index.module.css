@@ -31,9 +31,17 @@
 }
 
 .button {
+	@mixin transition all;
+
 	border: unset !important;
 	position: relative;
 	z-index: 10;
+
+	@media (hover: hover) {
+		&:hover {
+			opacity: 0.8;
+		}
+	}
 }
 
 .tabIndicator {

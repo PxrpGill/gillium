@@ -51,9 +51,11 @@ export const Tabs = ({ tabs, className }: TabsProps) => {
 					<span className={css.tabIndicator} style={indicatorStyle} />
 					{tabs.map((tab, index) => (
 						<li
-							className={css.tab}
+							className={cx(css.tab, { [css.active]: activeTab === index })}
 							key={index}
-							ref={el => (tabsRef.current[index] = el)}
+							ref={el => {
+								tabsRef.current[index] = el;
+							}}
 						>
 							<Button
 								onClick={() => handleTabClick(index)}
