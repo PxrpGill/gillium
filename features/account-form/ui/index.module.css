@@ -1,3 +1,18 @@
 .root {
-	margin-top: 20vh;
+	@mixin responsive padding-inline, 40, 40;
+	@mixin responsive padding-block, 30, 30;
+	@mixin responsive border-radius, 30, 30;
+
+	width: fit-content;
+	margin-inline: auto;
+	margin-block-start: 10svh;
+
+	background-color: var(--black-89-color);
+}
+
+.title {
+	@mixin h3;
+	@mixin responsive padding-block-end, 25, 25;
+
+	text-align: center;
 }

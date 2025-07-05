@@ -3,7 +3,7 @@ import { RegistrationForm } from '@/features/account-form/ui/registration-form';
 import type { TabProps } from '@/shared/ui/tabs';
 
 export const ACCOUNT_FORM_DATA = {
-	title: 'Аккаунт',
+	title: 'Личный кабинет',
 	login: {},
 	registration: {},
 };

@@ -13,7 +13,7 @@ import css from './index.module.css';
 export const AccountForm = ({ className }: AccountFormProps) => {
 	return (
 		<section className={cx(css.root, className)}>
-			<h1>{parser(ACCOUNT_FORM_DATA.title)}</h1>
+			<h1 className={css.title}>{parser(ACCOUNT_FORM_DATA.title)}</h1>
 			<Tabs tabs={ACCOUNT_FORM_TABS} />
 		</section>
 	);

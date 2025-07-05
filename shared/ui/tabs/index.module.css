@@ -5,14 +5,43 @@
 	flex-direction: column;
 	align-items: center;
 	width: fit-content;
+	position: relative;
 }
 
-.tabs {
+.tabWrapper {
 	@mixin responsive gap, 10, 10;
 	@mixin responsive border-radius, 7, 7;
-	@mixin responsive padding, 5, 5;
+	@mixin responsive padding, 5, 10;
+	@mixin responsive border-radius, 6, 6;
+
+	background-color: var(--black-40-color);
 
 	display: flex;
 	align-items: center;
 	width: fit-content;
+	position: relative;
+}
+
+.tabs {
+	position: relative;
+	display: flex;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.button {
+	border: unset !important;
+	position: relative;
+	z-index: 10;
+}
+
+.tabIndicator {
+	@mixin responsive border-radius, 7, 7;
+	@mixin transition;
+
+	transition-property: all;
+	position: absolute;
+	background: var(--deep-cyan);
+	z-index: 0;
 }
