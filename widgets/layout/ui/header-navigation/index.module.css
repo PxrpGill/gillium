@@ -6,10 +6,11 @@
 }
 
 .button[data-variant='subtle'] {
-	@mixin transition color;
+	@mixin transition all;
 
 	@media (hover: hover) {
 		&:hover {
+			translate: 0% -10%;
 			color: var(--info-100-color);
 		}
 	}
@@ -26,6 +27,7 @@
 
 	@media (hover: hover) {
 		&:hover {
+			translate: 0% -10%;
 			background-color: var(--deep-cyan);
 		}
 	}

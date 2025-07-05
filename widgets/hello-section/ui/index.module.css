@@ -42,9 +42,11 @@
 
 	background-color: var(--success-100-color);
 	border: unset !important;
+	transition-property: all;
 
 	@media (hover:hover) {
 		&:hover {
+			translate: 0% -10%;
 			background-color: var(--deep-cyan);
 		}
 	}

@@ -7,12 +7,16 @@
 }
 
 .homePageLink {
-	@mixin transition color;
+	@mixin transition;
 	@mixin body-large;
+
+	display: block;
+	transition-property: all;
 
 	@media (hover: hover) {
 		&:hover {
-			color: var(--deep-magenta)
+			translate: 0% -10%;
+			color: var(--deep-magenta);
 		}
 	}
 }
