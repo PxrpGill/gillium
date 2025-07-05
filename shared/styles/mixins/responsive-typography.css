@@ -10,46 +10,46 @@
 }
 
 @define-mixin h1 {
-  @mixin responsive-typography 32, 64, 40, 76, 700;
-  font-family: var(--font-roboto-bold);
+  @mixin responsive-typography 32, 64, 40, 76, 400;
+  font-family: var(--russo-one);
 }
 
 @define-mixin h2 {
-  @mixin responsive-typography 28, 48, 36, 58, 700;
-  font-family: var(--font-roboto-bold);
+  @mixin responsive-typography 28, 48, 36, 58, 400;
+  font-family: var(--russo-one);
 }
 
 @define-mixin h3 {
-  @mixin responsive-typography 24, 36, 32, 44, 700;
-  font-family: var(--font-roboto-bold);
+  @mixin responsive-typography 24, 36, 32, 44, 400;
+  font-family: var(--russo-one);
 }
 
 @define-mixin h4 {
-  @mixin responsive-typography 20, 28, 28, 36, 700;
-  font-family: var(--font-roboto-bold);
+  @mixin responsive-typography 20, 28, 28, 36, 400;
+  font-family: var(--russo-one);
 }
 
 @define-mixin body-large {
-  @mixin responsive-typography 18, 24, 26, 32, 400;
-  font-family: var(--font-roboto-regular);
+  @mixin responsive-typography 16, 24, 26, 32, 400;
+  font-family: var(--russo-one);
 }
 
 @define-mixin body-medium {
   @mixin responsive-typography 16, 20, 24, 28, 400;
-  font-family: var(--font-roboto-regular);
+  font-family: var(--russo-one);
 }
 
 @define-mixin body-small {
-  @mixin responsive-typography 14, 16, 20, 24, 400;
-  font-family: var(--font-roboto-regular);
+  @mixin responsive-typography 18, 18, 20, 24, 400;
+  font-family: var(--russo-one);
 }
 
 @define-mixin caption {
   @mixin responsive-typography 12, 14, 16, 20, 400;
-  font-family: var(--font-roboto-regular);
+  font-family: var(--russo-one);
 }
 
 @define-mixin button-text {
-  @mixin responsive-typography 16, 18, 24, 26, 500;
-  font-family: var(--font-roboto-medium);
+  @mixin responsive-typography 14, 18, 24, 26, 400;
+  font-family: var(--russo-one);
 }

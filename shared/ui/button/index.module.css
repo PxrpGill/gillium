@@ -1,5 +1,5 @@
 .root {
-	@mixin responsive padding-block, 2, 2;
+	@mixin responsive padding-block, 10, 10;
 	@mixin responsive padding-inline, 25, 25;
 	@mixin button-text;
 	@mixin responsive border-radius, 5, 7;

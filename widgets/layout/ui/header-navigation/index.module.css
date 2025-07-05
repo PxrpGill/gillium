@@ -1,6 +1,32 @@
 .root {
-    @mixin responsive gap, 5, 20;
+	@mixin responsive gap, 5, 30;
 
 	display: flex;
 	align-items: center;
+}
+
+.button[data-variant='subtle'] {
+	@mixin transition color;
+
+	@media (hover: hover) {
+		&:hover {
+			color: var(--info-100-color);
+		}
+	}
+}
+
+.button[data-variant='filled'] {
+	@mixin transition;
+	@mixin box-shadow black;
+
+	transition-property: all;
+	background-color: var(--black-80-color);
+	border: unset !important;
+	color: var(--white-100-color);
+
+	@media (hover: hover) {
+		&:hover {
+			background-color: var(--deep-cyan);
+		}
+	}
 }

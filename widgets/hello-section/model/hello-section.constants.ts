@@ -1,21 +1,9 @@
 export const HELLO_SECTION_DATA = {
-	title: 'Добро пожаловать<br /> в GILLIUM!',
+	title: 'Добро пожаловать<br /> в&nbsp;GILLIUM!',
 	description:
-		'Данная платформа предоставляет собой инструментом продуктивности.',
+		'GILLIUM&nbsp;&mdash; пространство для фокусированной<br /> и&nbsp;осмысленной работы. <br /><br /> Присоединяйся и&nbsp;создавай продуктивность<br /> на&nbsp;своих условиях.',
 	button: {
-		text: 'Начать работу!',
+		text: 'Присоединиться!',
 		href: '/account',
 	},
-	links: [
-		{
-			href: '/materials',
-			text: 'Полезные материалы',
-			variant: 'subtle',
-		},
-		{
-			href: '/documents/politic',
-			text: 'Политика конфиденциальности',
-			variant: 'subtle',
-		},
-	],
 };

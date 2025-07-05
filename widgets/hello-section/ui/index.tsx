@@ -20,19 +20,6 @@ export const HelloSection = () => {
 			>
 				{parser(HELLO_SECTION_DATA.button.text)}
 			</Button>
-			<nav className={css.navigation}>
-				{HELLO_SECTION_DATA.links.map((link, index) => (
-					<Button
-						key={index}
-						variant={link.variant}
-						as={Link}
-						href={link.href}
-						className={css.link}
-					>
-						{parser(link.text)}
-					</Button>
-				))}
-			</nav>
 		</section>
 	);
 };

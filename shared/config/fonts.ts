@@ -33,9 +33,18 @@ export const robotoBold = localFont({
 	variable: '--font-roboto-bold',
 });
 
+export const russoOneRegular = localFont({
+	src: '../../public/fonts/RussoOne-Regular.woff2',
+	weight: '400',
+	style: 'normal',
+	display: 'swap',
+	variable: '--russo-one',
+});
+
 export const fontVariables = [
 	robotoRegular.variable,
 	robotoMedium.variable,
 	robotoSemiBold.variable,
 	robotoBold.variable,
+	russoOneRegular.variable,
 ].join(' ');

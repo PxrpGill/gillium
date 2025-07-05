@@ -44,6 +44,7 @@ export const Button = forwardRef<unknown, ButtonProps<ElementType>>(
 				ref={ref}
 				className={cx(css.root, className, css[variant])}
 				disabled={disabled || loading}
+				data-variant={variant}
 				{...rest}
 			>
 				{leftIcon && <span className={css.leftIcon}>{leftIcon}</span>}

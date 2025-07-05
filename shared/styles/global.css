@@ -3,6 +3,7 @@
 :root {
 	--black-100-color: #18181b;
 	--black-80-color: #23232a;
+	--black-89-color: rgba(35, 35, 42, 0.9);
 	--black-60-color: #2e2e38;
 	--black-40-color: #444452;
 	--black-20-color: #5c5c6e;
@@ -57,21 +58,12 @@
 html,
 body {
 	font-size: 1vw;
-	font-family: var(--font-roboto-regular);
+	font-family: var(--russo-one);
 	color: var(--white-100-color);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	font-family: var(--font-roboto-bold);
-}
-
-strong {
-	font-family: var(--font-roboto-medium);
+body {
+	min-height: 100svh;
 }
 
 html,
