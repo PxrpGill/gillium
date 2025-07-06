@@ -2,33 +2,27 @@ export const getRegistrationInputs = () => {
 	return [
 		{
 			type: 'text',
-			placeholder: 'Введите имя',
-			label: 'Имя',
-		},
-		{
-			type: 'text',
-			placeholder: 'Введите фамилию',
-			label: 'Фамилия',
+			placeholder: 'Введите имя пользователя...',
+			label: 'Имя пользователя',
+			required: true,
 		},
 		{
 			type: 'email',
-			placeholder: 'Введите почту',
-			label: 'Почта',
-		},
-		{
-			type: 'text',
-			placeholder: 'Введите название компании',
-			label: 'Компания',
+			placeholder: 'Введите email...',
+			label: 'Email',
+			required: true,
 		},
 		{
 			type: 'password',
-			placeholder: 'Введите пароль',
+			placeholder: 'Введите пароль...',
 			label: 'Пароль',
+			required: true,
 		},
 		{
 			type: 'password',
-			placeholder: 'Повторите пароль',
+			placeholder: 'Повторите пароль...',
 			label: 'Повторите пароль',
+			required: true,
 		},
 	];
 };

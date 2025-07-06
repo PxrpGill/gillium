@@ -44,8 +44,13 @@
   font-family: var(--russo-one);
 }
 
+@define-mixin placeholder {
+  @mixin responsive-typography 16, 16, 20, 24, 400;
+  font-family: var(--russo-one);
+}
+
 @define-mixin caption {
-  @mixin responsive-typography 12, 14, 16, 20, 400;
+  @mixin responsive-typography 12, 12, 16, 20, 400;
   font-family: var(--russo-one);
 }
 

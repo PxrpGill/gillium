@@ -15,7 +15,7 @@ export const RegistrationForm = ({ className }: RegistrationFormProps) => {
 
 	return (
 		<form className={cx(css.root, className)}>
-			<div className={css.inputGroup}>
+			<div className={css.inputsGroup}>
 				{inputs.map((inputProps, index) => (
 					<Input {...inputProps} key={index} />
 				))}

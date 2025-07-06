@@ -1,0 +1,49 @@
+.root {
+	@mixin transition all;
+	@mixin responsive gap, 5, 5;
+
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+
+	&:has(input:focus) {
+		translate: 0% -10%;
+	}
+}
+
+.label {
+	@mixin caption;
+}
+
+.required {
+	color: var(--error-100-color);
+}
+
+.input {
+	@mixin responsive border-radius, 7, 7;
+	@mixin placeholder;
+	@mixin responsive padding-block, 10, 10;
+	@mixin responsive padding-inline, 7, 7;
+	@mixin transition all;
+
+	border: 2px solid var(--white-120-color);
+	background-color: unset;
+	caret-color: var(--white-100-color);
+	color: var(--white-100-color);
+	width: 100%;
+	box-sizing: border-box;
+	outline: none;
+
+	&:focus-visible {
+		border-color: var(--white-120-color);
+	}
+
+	&:focus {
+		border-color: var(--deep-cyan);
+	}
+}
+
+.inputWrapper {
+	width: 100%;
+	box-sizing: border-box;
+}
