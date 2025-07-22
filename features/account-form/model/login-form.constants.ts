@@ -14,3 +14,7 @@ export const getLoginInputs = () => {
 		},
 	];
 };
+
+export const LOGIN_SUBMIT_BUTTON = 'Вход';
+export const FORGOT_YOUR_PASSWORD = 'Забыли пароль?';
+export const FORGOT_PAGE = '/';

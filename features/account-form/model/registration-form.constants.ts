@@ -1,12 +1,6 @@
 export const getRegistrationInputs = () => {
 	return [
 		{
-			type: 'text',
-			placeholder: 'Введите имя пользователя...',
-			label: 'Имя пользователя',
-			required: true,
-		},
-		{
 			type: 'email',
 			placeholder: 'Введите email...',
 			label: 'Email',

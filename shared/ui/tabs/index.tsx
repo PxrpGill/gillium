@@ -3,8 +3,8 @@
 import cx from 'clsx';
 import parser from 'html-react-parser';
 import type { JSX } from 'react';
-import { useEffect, useRef, useState } from 'react';
 
+import { useTabs } from '@/shared/hooks/use-tabs';
 import type { PropsWithClassName } from '@/shared/types';
 import { Button } from '@/shared/ui/button';
 
@@ -20,29 +20,9 @@ type TabsProps = PropsWithClassName & {
 };
 
 export const Tabs = ({ tabs, className }: TabsProps) => {
-	const [activeTab, setActiveTab] = useState<number>(0);
-	const [indicatorStyle, setIndicatorStyle] = useState({});
-	const tabsRef = useRef<Array<HTMLLIElement | null>>([]);
-
-	useEffect(() => {
-		if (tabsRef.current[activeTab]) {
-			const activeTabElement = tabsRef.current[activeTab];
-			if (activeTabElement) {
-				const { offsetWidth, offsetHeight, offsetLeft } = activeTabElement;
-				setIndicatorStyle({
-					width: `${offsetWidth}px`,
-					height: `${offsetHeight}px`,
-					transform: `translateX(${offsetLeft}px)`,
-				});
-			}
-		}
-	}, [activeTab]);
+	const { tabsRef, indicatorStyle, activeTab, handleTabClick } = useTabs();
 
 	if (!(tabs && tabs.length)) return null;
-
-	const handleTabClick = (index: number) => {
-		setActiveTab(index);
-	};
 
 	return (
 		<article className={cx(css.root, className)}>

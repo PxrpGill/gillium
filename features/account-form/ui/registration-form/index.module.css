@@ -1,7 +1,23 @@
 .inputsGroup {
 	@mixin responsive gap, 10, 15;
+	@mixin responsive margin-block-end, 25, 25;
 
 	width: 100%;
 	display: flex;
 	flex-direction: column;
+}
+
+.button[type] {
+	@mixin transitionOptions;
+
+	transition-property: background-color, translate;
+	border: 0;
+	background-color: var(--success-100-color);
+
+	@media (hover:hover) {
+		&:hover {
+			translate: 0% -10%;
+			background-color: var(--deep-cyan);
+		}
+	}
 }

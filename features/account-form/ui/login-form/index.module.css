@@ -1,4 +1,8 @@
 .root {
+	@mixin responsive gap, 25, 25;
+
+	display: flex;
+	flex-direction: column;
 	width: 100%;
 }
 
@@ -8,4 +12,41 @@
 	width: 100%;
 	display: flex;
 	flex-direction: column;
+}
+
+.buttonPanel {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.submitButton[type] {
+	@mixin transitionOptions;
+
+	transition-property: background-color, translate;
+	border: 0;
+	background-color: var(--success-100-color);
+
+	@media (hover: hover) {
+		&:hover {
+			translate: 0% -10%;
+			background-color: var(--deep-cyan);
+		}
+	}
+}
+
+.forgot[href] {
+	@mixin responsive-typography 12, 14, 1, 1;
+	@mixin transitionOptions;
+
+	transition-property: color, translate;
+	border: 0;
+	padding-inline: unset;
+
+	@media (hover: hover) {
+		&:hover {
+			translate: 0% -10%;
+			color: var(--success-100-color);
+		}
+	}
 }

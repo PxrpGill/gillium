@@ -20,7 +20,9 @@ export const RegistrationForm = ({ className }: RegistrationFormProps) => {
 					<Input {...inputProps} key={index} />
 				))}
 			</div>
-			<Button type="submit">{parser(REGISTRATION_SUBMIT_BUTTON)}</Button>
+			<Button type="submit" className={css.button}>
+				{parser(REGISTRATION_SUBMIT_BUTTON)}
+			</Button>
 		</form>
 	);
 };
