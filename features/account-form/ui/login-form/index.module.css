@@ -35,7 +35,7 @@
 	}
 }
 
-.forgot[href] {
+.forgot[class] {
 	@mixin responsive-typography 12, 14, 1, 1;
 	@mixin transitionOptions;
 

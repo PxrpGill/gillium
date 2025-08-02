@@ -1,0 +1,47 @@
+.modalHeader {
+	@mixin responsive padding-block-start, 30, 20;
+	overflow: visible;
+}
+
+.modalHeader h2 {
+	@mixin body-large;
+}
+
+.content {
+	@mixin responsive border-radius, 20, 20;
+}
+
+.modalBody {
+	@mixin responsive padding-block-start, 10, 10;
+	@mixin responsive padding-block-end, 30, 30;
+}
+
+.modalBody,
+.modalHeader {
+	@mixin responsive padding-inline, 20, 20;
+}
+
+.form {
+	@mixin responsive gap, 15, 15;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.submitButton[type] {
+	@mixin transitionOptions;
+	@mixin responsive margin-block-start, 15, 15;
+
+	outline: none;
+	user-select: none;
+	transition-property: background-color, translate;
+	border: unset;
+	background-color: var(--success-100-color);
+
+	@media (hover: hover) {
+		&:hover {
+			translate: 0% -10%;
+			background-color: var(--deep-cyan);
+		}
+	}
+}

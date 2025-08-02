@@ -44,7 +44,7 @@
 	border: unset !important;
 	transition-property: all;
 
-	@media (hover:hover) {
+	@media (hover: hover) {
 		&:hover {
 			translate: 0% -10%;
 			background-color: var(--deep-cyan);

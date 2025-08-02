@@ -4,9 +4,10 @@
 	@mixin responsive border-radius, 30, 30;
 
 	width: fit-content;
-	margin-inline: auto;
-	margin-block-start: 1svh;
-
+	left: 50%;
+	top: 50%;
+	translate: -50% -50%;
+	position: absolute;
 	background-color: var(--black-89-color);
 }
 
