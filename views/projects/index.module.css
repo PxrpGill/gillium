@@ -1,0 +1,6 @@
+.pageTitle {
+	@mixin h4;
+	@mixin responsive padding-block-end, 30, 40;
+
+	text-align: center;
+}

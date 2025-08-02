@@ -4,8 +4,8 @@
   font-weight: $(font-weight);
   
   @media (max-width: 767px) {
-    font-size: calc($(font-size-mobile)rem / 3);
-    line-height: calc($(line-height-mobile)rem / 3);
+    font-size: calc($(font-size-mobile)rem / 3.75);
+    line-height: calc($(line-height-mobile)rem / 3.75);
   }
 }
 
